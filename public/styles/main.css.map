@@ -1,9 +1,11 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB",
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,UAAU,EAAE,KAAK;EACjB,KAAK,EAAE,UAAU;CACpB",
     "sources": [
         "main.scss",
-        "_global.scss"
+        "_global.scss",
+        "../../src/views/partials/header/_header.scss",
+        "../../src/views/partials/footer/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
