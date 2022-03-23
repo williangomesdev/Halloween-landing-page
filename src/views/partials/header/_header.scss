@@ -1,0 +1,48 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $strongBlack;
+    .logo {
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: bold;
+        i {
+            padding-right: 0.5rem;
+            color: $mainColor;
+            animation: floating 4s linear infinite;
+        }
+    }
+    .navbar {
+        a {
+            font-size: 1.7rem;
+            color: #fff;
+            margin: 0 1rem;
+            &:hover,
+            &.active {
+                color: $mainColor;
+            }
+        }
+    }
+    .icons {
+        a,
+        div {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-left: 2rem;
+            cursor: pointer;
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+    #menuBtn {
+        display: none;
+    }
+}

@@ -1,9 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: black;
-  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transition: width none;
+  transition: width none;
+}
+
+@-webkit-keyframes floating {
+  0%,
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+  50% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+  50% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #141215;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ef7819;
+}
+
+body {
+  overflow-x: hidden;
+  background: #141215;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 3rem 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header .logo i {
+  padding-right: 0.5rem;
+  color: #ef7819;
+  -webkit-animation: floating 4s linear infinite;
+          animation: floating 4s linear infinite;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.header .navbar a:hover, .header .navbar a.active {
+  color: #ef7819;
+}
+
+.header .icons a,
+.header .icons div {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+  color: #ef7819;
+}
+
+.header #menuBtn {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
