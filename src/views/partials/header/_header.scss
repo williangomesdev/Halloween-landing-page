@@ -48,12 +48,18 @@
     .searchForm {
         position: absolute;
         top: 115%;
-        right: 2rem;
+        right: -100%;
         background: #fff;
         width: 50rem;
         height: 5rem;
         display: flex;
         align-items: center;
+        opacity: 0;
+        &.active {
+            right: 2rem;
+            opacity: 1;
+            transition: .4s linear;
+        }
         input {
             width: 100%;
             padding: 0 1.5rem;

@@ -125,7 +125,7 @@ body {
 .header .searchForm {
   position: absolute;
   top: 115%;
-  right: 2rem;
+  right: -100%;
   background: #fff;
   width: 50rem;
   height: 5rem;
@@ -135,6 +135,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+}
+
+.header .searchForm.active {
+  right: 2rem;
+  opacity: 1;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
 }
 
 .header .searchForm input {
