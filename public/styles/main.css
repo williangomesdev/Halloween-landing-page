@@ -6,6 +6,8 @@
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  outline: none;
+  border: none;
   text-transform: capitalize;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -118,5 +120,39 @@ body {
 
 .header #menuBtn {
   display: none;
+}
+
+.header .searchForm {
+  position: absolute;
+  top: 115%;
+  right: 2rem;
+  background: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .searchForm input {
+  width: 100%;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  color: #141215;
+  text-transform: none;
+}
+
+.header .searchForm label {
+  font-size: 1.6rem;
+  padding-right: 1.5rem;
+  color: #141215;
+  cursor: pointer;
+}
+
+.header .searchForm label:hover {
+  color: #ef7819;
 }
 /*# sourceMappingURL=main.css.map */

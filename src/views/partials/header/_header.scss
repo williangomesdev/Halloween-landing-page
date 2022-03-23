@@ -45,4 +45,30 @@
     #menuBtn {
         display: none;
     }
+    .searchForm {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        background: #fff;
+        width: 50rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        input {
+            width: 100%;
+            padding: 0 1.5rem;
+            font-size: 1.6rem;
+            color: $black;
+            text-transform: none;
+        }
+        label {
+            font-size: 1.6rem;
+            padding-right: 1.5rem;
+            color: $black;
+            cursor: pointer;
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
 }
