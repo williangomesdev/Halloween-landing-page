@@ -1,0 +1,35 @@
+.contact {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        .map {
+            flex: 1 1 42rem;
+            width: 100%;
+        }
+        form {
+            flex: 1 1 42rem;
+            padding: 2rem;
+            text-align: center;
+            background: #222;
+            h3 {
+                font-size: 3rem;
+                padding-bottom: 1rem;
+                color: #fff;
+            }
+            .box {
+                width: 100%;
+                padding: 1rem 1.2rem;
+                background: $black;
+                color: #fff;
+                font-size: 1.6rem;
+                text-transform: none;
+                margin: 0.7rem 0;
+            }
+            input {}
+            textarea {
+                height: 15rem;
+                resize: none;
+            }
+        }
+    }
+}
