@@ -275,6 +275,12 @@ section {
   padding-left: 4rem;
 }
 
+.product {
+  background: green;
+  color: #fff;
+  font-size: 5rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
