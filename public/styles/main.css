@@ -81,6 +81,17 @@ section {
   letter-spacing: 0.1rem;
 }
 
+.heading {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.heading span {
+  color: #ef7819;
+}
+
 .header {
   position: static;
   top: 0;
@@ -273,12 +284,6 @@ section {
 
 .home .homeSlider .swiper-button-prev {
   padding-left: 4rem;
-}
-
-.product {
-  background: green;
-  color: #fff;
-  font-size: 5rem;
 }
 
 @media (max-width: 991px) {

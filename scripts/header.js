@@ -4,7 +4,7 @@ let navbar = document.querySelector(".navbar");
 let searchBtn = document.querySelector("#searchBtn");
 let menuBtn = document.querySelector("#menuBtn");
 
-window.onscroll = () => {
+window.onload = () => {
     navbar.classList.remove("active");
     searchForm.classList.remove("active");
 
