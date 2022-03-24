@@ -41,4 +41,12 @@
     html {
         font-size: 50%;
     }
+    .home {
+        .homeSlider {
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+    }
 }

@@ -11,8 +11,6 @@
   text-transform: capitalize;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -webkit-transition: width none;
-  transition: width none;
 }
 
 @-webkit-keyframes floating {
@@ -197,6 +195,15 @@ section {
   padding: 0;
 }
 
+.home .homeSlider {
+  width: 100%;
+}
+
+.home .homeSlider:hover .swiper-button-next,
+.home .homeSlider:hover .swiper-button-prev {
+  opacity: 1;
+}
+
 .home .homeSlider .box {
   min-height: 100vh;
   display: -webkit-box;
@@ -209,27 +216,24 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem;
-  background-size: cover;
-  background-position: center;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
-.home .homeSlider .box:nth-child(1) {
-  background: url(/image/home-slider-1.jpg);
-}
-
-.home .homeSlider .box:nth-child(2) {
-  background: url(/image/home-slider-2.jpg);
-}
-
-.home .homeSlider .box:nth-child(3) {
-  background: url(/image/home-slider-3.jpg);
+.home .homeSlider .box.swiper-slide-active .content > * {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .home .homeSlider .box .content {
   text-align: center;
+}
+
+.home .homeSlider .box .content > * {
   -webkit-transform: translateY(2rem);
           transform: translateY(2rem);
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .home .homeSlider .box .content h3 {
@@ -242,14 +246,33 @@ section {
 .home .homeSlider .box .content p {
   font-size: 3rem;
   color: #fff;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
   padding: 1rem 0;
 }
 
 .home .homeSlider .box .content .button {
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
+}
+
+.home .homeSlider .swiper-button-next,
+.home .homeSlider .swiper-button-prev {
+  color: #fff;
+  opacity: 0;
+}
+
+.home .homeSlider .swiper-button-next:hover,
+.home .homeSlider .swiper-button-prev:hover {
+  color: #ef7819;
+}
+
+.home .homeSlider .swiper-button-next {
+  padding-right: 4rem;
+}
+
+.home .homeSlider .swiper-button-prev {
+  padding-left: 4rem;
 }
 
 @media (max-width: 991px) {
@@ -294,6 +317,10 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .home .homeSlider .swiper-button-next,
+  .home .homeSlider .swiper-button-prev {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,27 +1,35 @@
 .home {
     padding: 0;
     .homeSlider {
+        width: 100%;
+        &:hover {
+            .swiper-button-next,
+            .swiper-button-prev {
+                opacity: 1;
+            }
+        }
         .box {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 2rem;
-            background-size: cover;
-            background-position: center;
-            &:nth-child(1) {
-                background: url(/image/home-slider-1.jpg);
-            }
-            &:nth-child(2) {
-                background: url(/image/home-slider-2.jpg);
-            }
-            &:nth-child(3) {
-                background: url(/image/home-slider-3.jpg);
+            background-size: cover !important;
+            background-position: center !important;
+            &.swiper-slide-active {
+                .content {
+                    &>* {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
             }
             .content {
                 text-align: center;
-                transform: translateY(2rem);
-                /* opacity: 0; */
+                &>* {
+                    transform: translateY(2rem);
+                    opacity: 0;
+                }
                 h3 {
                     font-size: 5rem;
                     color: #fff;
@@ -30,13 +38,27 @@
                 p {
                     font-size: 3rem;
                     color: #fff;
-                    transition-delay: 0.2s;
+                    transition-delay: 0.4s;
                     padding: 1rem 0;
                 }
                 .button {
                     transition-delay: 0.6s;
                 }
             }
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #fff;
+            opacity: 0;
+            &:hover {
+                color: $mainColor;
+            }
+        }
+        .swiper-button-next {
+            padding-right: 4rem;
+        }
+        .swiper-button-prev {
+            padding-left: 4rem;
         }
     }
 }
