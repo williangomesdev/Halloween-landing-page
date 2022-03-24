@@ -506,6 +506,78 @@ section {
   resize: none;
 }
 
+.blogs .boxContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(36rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .boxContainer .box .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .boxContainer .box .image:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.blogs .boxContainer .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .boxContainer .box .content {
+  padding: 2rem;
+  background: #222;
+}
+
+.blogs .boxContainer .box .content h3 {
+  font-size: 2.5rem;
+  color: #ef7819;
+  line-height: 1.8;
+}
+
+.blogs .boxContainer .box .content p {
+  line-height: 2;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.blogs .boxContainer .box .content .icons {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid #fff3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogs .boxContainer .box .content .icons a,
+.blogs .boxContainer .box .content .icons i {
+  padding-right: 0.5rem;
+}
+
+.blogs .boxContainer .box .content .icons a {
+  font-size: 1.4rem;
+  color: #ef7819;
+}
+
+.blogs .boxContainer .box .content .icons a:hover {
+  color: #fff;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
