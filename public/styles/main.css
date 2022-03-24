@@ -67,6 +67,22 @@ section {
   padding: 2rem 9%;
 }
 
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  background: #fff;
+  color: #141215;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ef7819;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
 .header {
   position: static;
   top: 0;
@@ -211,6 +227,9 @@ section {
 
 .home .homeSlider .box .content {
   text-align: center;
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  /* opacity: 0; */
 }
 
 .home .homeSlider .box .content h3 {

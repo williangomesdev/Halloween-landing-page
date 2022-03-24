@@ -52,3 +52,18 @@ body {
 section {
     padding: 2rem 9%;
 }
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    background: #fff;
+    color: $black;
+    cursor: pointer;
+    &:hover {
+        background: $mainColor;
+        color: #fff;
+        letter-spacing: 0.1rem;
+    }
+}
