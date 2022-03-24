@@ -12,3 +12,25 @@ var swiper = new Swiper(".homeSlider", {
         disableOnInteraction: false,
     },
 });
+
+var swiper = new Swiper(".productsSlider", {
+    spaceBetween: 20,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+    },
+    grabCursor: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
