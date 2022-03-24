@@ -12,13 +12,13 @@
             }
             a,
             i {
-                padding-left: 0.5rem;
+                padding-right: 0.5rem;
                 color: $mainColor;
             }
             a {
-                font-size: 1.4rem;
+                font-size: 1.7rem;
                 color: #aaa;
-                padding: 1rem 0;
+                padding: 2rem 0;
                 display: block;
                 &:hover {
                     i {
@@ -27,17 +27,6 @@
                     }
                 }
             }
-            /*  .fa-map-marker-alt::before,
-            .fa-arrow-right::before,
-            .fa-phone::before,
-            .fa-envelope::before,
-            .fa-facebook-f::before,
-            .fa-twitter::before,
-            .fa-instagram::before,
-            .fa-linkedin::before,
-            .fa-pinterest::before {
-                padding-right: 0.5rem;
-            } */
         }
     }
     .credits {

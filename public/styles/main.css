@@ -198,69 +198,6 @@ footer {
   color: #ef7819;
 }
 
-.footer {
-  background: #000;
-}
-
-.footer .boxContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
-}
-
-.footer .boxContainer .box {
-  /*  .fa-map-marker-alt::before,
-            .fa-arrow-right::before,
-            .fa-phone::before,
-            .fa-envelope::before,
-            .fa-facebook-f::before,
-            .fa-twitter::before,
-            .fa-instagram::before,
-            .fa-linkedin::before,
-            .fa-pinterest::before {
-                padding-right: 0.5rem;
-            } */
-}
-
-.footer .boxContainer .box h3 {
-  font-size: 2.2rem;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-.footer .boxContainer .box a,
-.footer .boxContainer .box i {
-  padding-left: 0.5rem;
-  color: #ef7819;
-}
-
-.footer .boxContainer .box a {
-  font-size: 1.4rem;
-  color: #aaa;
-  padding: 1rem 0;
-  display: block;
-}
-
-.footer .boxContainer .box a:hover i {
-  padding-right: 2rem;
-  color: #ef7819;
-}
-
-.footer .credits {
-  padding: 1rem;
-  padding-top: 2.5rem;
-  border-top: 0.1rem solid #fff3;
-  color: #aaa;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.footer .credits span {
-  color: #ef7819;
-}
-
 .home {
   padding: 0;
 }
@@ -640,6 +577,55 @@ footer {
 
 .blogs .boxContainer .box .content .icons a:hover {
   color: #fff;
+}
+
+.footer {
+  background: #000;
+}
+
+.footer .boxContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .boxContainer .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .boxContainer .box a,
+.footer .boxContainer .box i {
+  padding-right: 0.5rem;
+  color: #ef7819;
+}
+
+.footer .boxContainer .box a {
+  font-size: 1.7rem;
+  color: #aaa;
+  padding: 2rem 0;
+  display: block;
+}
+
+.footer .boxContainer .box a:hover i {
+  padding-right: 2rem;
+  color: #ef7819;
+}
+
+.footer .credits {
+  padding: 1rem;
+  padding-top: 2.5rem;
+  border-top: 0.1rem solid #fff3;
+  color: #aaa;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.footer .credits span {
+  color: #ef7819;
 }
 
 @media (max-width: 991px) {
