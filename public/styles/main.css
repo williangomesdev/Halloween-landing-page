@@ -63,12 +63,15 @@ body {
   background: #141215;
 }
 
+section {
+  padding: 2rem 9%;
+}
+
 .header {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
   padding: 3rem 9%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,8 +149,8 @@ body {
 .header .searchForm.active {
   right: 2rem;
   opacity: 1;
-  -webkit-transition: .4s linear;
-  transition: .4s linear;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 .header .searchForm input {
@@ -167,6 +170,67 @@ body {
 
 .header .searchForm label:hover {
   color: #ef7819;
+}
+
+.footer {
+  background-color: red;
+  color: White;
+}
+
+.home {
+  padding: 0;
+}
+
+.home .homeSlider .box {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .homeSlider .box:nth-child(1) {
+  background: url(/image/home-slider-1.jpg);
+}
+
+.home .homeSlider .box:nth-child(2) {
+  background: url(/image/home-slider-2.jpg);
+}
+
+.home .homeSlider .box:nth-child(3) {
+  background: url(/image/home-slider-3.jpg);
+}
+
+.home .homeSlider .box .content {
+  text-align: center;
+}
+
+.home .homeSlider .box .content h3 {
+  font-size: 5rem;
+  color: #fff;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.home .homeSlider .box .content p {
+  font-size: 3rem;
+  color: #fff;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  padding: 1rem 0;
+}
+
+.home .homeSlider .box .content .button {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 @media (max-width: 991px) {

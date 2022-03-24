@@ -1,9 +1,8 @@
 .header {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
     padding: 3rem 9%;
     display: flex;
     align-items: center;
@@ -62,7 +61,7 @@
         &.active {
             right: 2rem;
             opacity: 1;
-            transition: .4s linear;
+            transition: 0.4s linear;
         }
         input {
             width: 100%;
