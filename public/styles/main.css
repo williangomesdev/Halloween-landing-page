@@ -94,11 +94,12 @@ footer {
 }
 
 .header {
-  position: static;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: 3rem 9%;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
